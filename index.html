@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link href='https://fonts.googleapis.com/css?family=Merriweather:400,700,300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Document</title>
+</head>
+<body>
+	<div class="header">
+		<div class="container">
+			<h1 class="txt-center">The Code Review</h1>
+		</div>
+	</div>
+	<div class="container">
+		<div class="col">
+			<h2 class="txt-center subtitle">Signup for our newsletter</h2>
+			<p class="txt-center subtext">Get the latest news on how your code is doing right in your inbox</p>
+		</div>
+		<div class="col">
+			<hr>
+		</div>
+		<div class="col">
+			<form action="#">
+				<fieldset>
+					<legend>Contact Information</legend>
+					<div class="form-group clearfix">
+						<label for="name" class="col"><span class="fa fa-user"></span> Full Name</label>
+						<div class="col">
+							<input type="text" id="name" name="name" placeholder="Your name" value="" aria-describedby="name-format" required aria-required=”true” pattern="[A-Za-z-0-9]+\s[A-Za-z-'0-9]+" title="firstname lastname">
+						</div>
+					</div>
+					<div class="form-group clearfix">
+						<label for="email" class="col"><span class="fa fa-envelope"></span> Email Address</label>
+						<div class="col">
+							<input type="email" id="email" name="email" placeholder="Email" required>
+						</div>
+					</div>
+					<div class="form-group clearfix">
+						<label for="phone" class="col"><span class="fa fa-phone"></span> Phone Number</label>
+						<div class="col">
+							<input type="text" id="phone" name="phone" placeholder="Phone" required>
+						</div>
+					</div>
+					<div class="form-group clearfix">
+						<label for="street" class="col"><span class="fa fa-map-marker"></span> Street Address</label>
+						<div class="col">
+							<input type="text" id="street" name="street" placeholder="Street Address" required>
+						</div>
+					</div>
+					<div class="form-group clearfix">
+						<label for="city" class="col"><span class="fa fa-map-signs"></span> City</label>
+						<div class="col">
+							<input type="text" id="city" name="city" placeholder="City">
+						</div>
+					</div>
+					<div class="form-group clearfix">
+						<label for="state" class="col"><span class="fa fa-flag"></span> State</label>
+						<div class="col">
+							<select name="state" id="state">
+								<option value="" disabled selected>Choose State*</option>
+							</select>
+						</div>
+					</div>
+					<div class="form-group clearfix">
+						<label for="zip_code" class="col"><span class="fa fa-map-pin"></span> Zip Code</label>
+						<div class="col">
+							<input type="number" id="zip_code" name="zip_code" placeholder="Zip Code" required>
+						</div>
+					</div>
+				</fieldset>
+				<hr class="last">
+				<fieldset>
+					<legend>Newsletter</legend>
+					<label>Select the newsletter you would like to recieve</label>
+					<div class="checkbox">
+						<label for="HTML">
+							<input type="checkbox" name="news" id="HTML">HTML News
+						</label>
+					</div>
+					<div class="checkbox">
+						<label for="CSS">
+							<input type="checkbox" name="news" id="CSS">CSS News
+						</label>
+					</div>
+					<div class="checkbox">
+						<label for="javascript">
+							<input type="checkbox" name="news" id="javascript">Javascript News
+						</label>
+					</div>
+					<label>Newsletter format</label>
+					<div class="radio">
+						<label for="html_format">
+							<input type="radio" name="format" id="html_format">HTML Format
+						</label>
+					</div>
+					<div class="radio">
+						<label for="plain_text">
+							<input type="radio" name="format" id="plain_text">Plain Text
+						</label>
+					</div>
+					<label>Other topics you'd like to hear about</label><br>
+					<textarea name="topics" cols="30" rows="10"></textarea>
+				</fieldset>
+				<p class="txt-center"><button class="btn btn-sign btn-lg">Sign Up</button></p>
+			</form>
+		</div>
+		<footer>
+			<div class="col">
+				<p class="txt-center"><em>Copyright The Code Review</em></p>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>

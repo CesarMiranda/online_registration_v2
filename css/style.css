@@ -1,0 +1,297 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #a8adb2;
+    text-align: right;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 14px;
+    padding-right: 8px;
+}
+::-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #a8adb2;
+   text-align: right;
+   font-style: italic;
+   font-weight: 300;
+   font-size: 14px;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #a8adb2;
+   text-align: right;
+   font-style: italic;
+   font-weight: 300;
+   font-size: 14px;
+}
+::-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #a8adb2;
+   text-align: right;
+   font-style: italic;
+   font-weight: 300;
+   font-size: 14px;
+}
+
+.container {
+	width: 100%;
+	margin: 0 auto;
+	max-width: 1150px;
+}
+
+body {
+	font-family: 'Merriweather', serif;
+	background-color: #fffff0;
+}
+
+hr {
+	border: 0;
+	border-top: 6px double #2d3945;
+	border-bottom: 2px solid #2d3945;
+}
+
+hr.last {
+	border: 1px solid #2d3945;
+}
+
+label {
+	display: inline-block;
+	min-width: 100%;
+	margin-bottom: 10px;
+	color: #9da3a8;
+	font-weight: 300;
+	color: #495d70;
+}
+
+fieldset {
+	padding: 0px;
+	border: none;
+}
+
+fieldset:nth-of-type(1) {
+	margin-top: 60px;
+	margin-bottom: 60px;
+}
+
+fieldset:nth-of-type(2) {
+	margin-top: 60px;
+	margin-bottom: 0px;
+}
+
+legend {
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 30px;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+	display: block;
+	min-width: 100%;
+	position: relative;
+	height: 51px;
+	background-color: #eff0f1;
+	border: 1px solid #eff0f1;
+	border-radius: 5px;
+	padding: 6px 12px;
+	margin-bottom: 28px;
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	-o-transition: all .5s;
+	transition: all .5s; 
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+select:focus,
+textarea:focus {
+	background-color: #fff;
+	outline: 1px solid #2d3945;
+	border-radius: 5px;
+}
+
+input[type="number"] {
+	display: block;
+	position: relative;
+	height: 45px;
+	background-color: #eff0f1;
+	border: 1px solid #eff0f1;
+	border-radius: 5px;
+	padding: 6px 12px;
+	margin-bottom: 15px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+	display: inline-block;
+	margin-right: 10px;
+}
+
+div[class="radio"],
+div[class="checkbox"] {
+	position: relative;
+	min-width: 100%;
+	margin: 10px 0px;
+}
+
+div[class="radio"] ~ label {
+	margin-top: 20px;
+}
+
+select {
+	color: #bec2c5;
+}
+
+option[value=””][disabled] {
+	display: none;
+	font-weight: 300;
+}
+
+option {
+	color: #000;
+}
+
+.header {
+	background: #2d3945;
+	-webkit-box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.5);
+	box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.5); 
+}
+
+.txt-center {
+	text-align: center;
+}
+
+.col {
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+.header h1 {
+	margin-top: 0px;
+	padding: 20px;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 300;
+}
+
+.subtitle {
+	margin-top: 80px;
+}
+
+.subtext {
+	font-weight: 300 !important;
+	margin-bottom: 80px;
+	margin-top: 0px;
+}
+
+.col p {
+	color: #9da3a8;
+	font-weight: normal;
+}
+
+form .form-group {
+	position: relative;
+	padding-bottom: 13px;
+}
+
+form .form-group span.fa {
+	margin-right: 5px;
+}
+
+.btn {
+	display: inline-block;
+	padding: 6px 12px;
+	font-size: 16px;
+	text-align: center;
+	vertical-align: middle;
+	white-space: nowrap;
+}
+
+.btn-sign {
+	background-color: #4ebbb5;
+	border-radius: 5px;
+	border: 1px solid #4ebbb5;
+	color: #fff;
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	-o-transition: all .5s;
+	transition: all .5s;
+}
+
+.btn-sign:hover {
+	background-color: #2d3945;
+}
+
+.btn-lg {
+	padding: 20px 35px;
+	min-width: 100%;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+footer p {
+	margin: 40px 0px;
+	font-weight: 300;
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+
+@media (min-width: 768px) {
+	
+	.container {
+		width: 80%;
+	}
+}
+
+@media (min-width: 992px) {
+	
+	.container {
+		width: 80%;
+		
+	}
+
+	.form-group label.col {
+		min-width: 20%;
+		float: left;
+	}
+
+	.form-group .col {
+		display: inline-block;
+		min-width: 80%;
+		float: right;
+	}
+}
+
+
+/* ---- Float clearfix ---- */
+
+.clearfix::after {
+	content: " ";
+	display: table;
+	clear: both;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
