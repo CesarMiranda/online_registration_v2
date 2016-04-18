@@ -247,7 +247,7 @@ footer p {
 
 
 @media (min-width: 768px) {
-	
+
 	.container {
 		width: 80%;
 	}
@@ -269,6 +269,10 @@ footer p {
 		display: inline-block;
 		min-width: 80%;
 		float: right;
+	}
+
+	.form-group .col-radio {
+		margin-left: 10%;
 	}
 }
 
