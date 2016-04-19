@@ -148,7 +148,7 @@ select {
 	color: #bec2c5;
 }
 
-option[value=””][disabled] {
+option[value=""][disabled] {
 	display: none;
 	font-weight: 300;
 }
@@ -271,6 +271,11 @@ footer p {
 		float: right;
 	}
 
+	#birthday div.col {
+		min-width: 20%;
+		float: left;
+	}
+
 }
 
 
@@ -281,18 +286,4 @@ footer p {
 	display: table;
 	clear: both;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
