@@ -64,6 +64,7 @@ label {
 	color: #9da3a8;
 	font-weight: 300;
 	color: #495d70;
+	font-size: 16px;
 }
 
 fieldset {
@@ -201,8 +202,16 @@ form .form-group {
 	padding-bottom: 13px;
 }
 
-form .form-group span.fa {
+form .form-group span.fa,
+form .form-group h3.fa {
 	margin-right: 5px;
+}
+
+h3 {
+	margin-top: 0px;
+	font-weight: 300;
+	font-size: 16px;
+	color: #495d70;
 }
 
 .btn {
@@ -260,10 +269,12 @@ footer p {
 		
 	}
 
-	.form-group label.col {
+	.form-group label.col,
+	.form-group h3.col {
 		min-width: 20%;
 		float: left;
 	}
+
 
 	.form-group .col {
 		display: inline-block;
